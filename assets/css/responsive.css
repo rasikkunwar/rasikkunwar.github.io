@@ -1,0 +1,76 @@
+/* 
+    Created on : Jul 03, 2017, 10:58:12 AM
+    Author     : Narendra Dangol
+    Email     : narendradangol0@gmail.com
+*/
+@media (min-width:1601px) and (max-width:2560px) {
+    body{
+        max-width: 1600px;
+        width: auto;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+}
+@media(max-width:1440px) {
+   .container{
+       max-width: 960px;
+   }
+}
+/*ipad landscape view*/
+@media(min-width:991px) and (max-width:1199px){
+
+}
+/*ipad potrait view*/
+@media(max-width:768px){
+
+}
+/*nexus 7 landscape*/
+@media(min-width:769px) and (max-width:990px){
+
+}
+/*iphone 5 and android lanscape and nexus 7 potrait*/
+@media(max-width:640px){
+    body {
+        margin: 0 0 2em;
+    }
+    .wrapper .container > .row {
+        padding: 2em 15px;
+    }
+    .rk-profile {
+        padding: 30px 0 0;
+    }
+    .rk-profile figure {
+        width: 15em;
+        height: 15em;
+    }
+}
+/*iphone 4 landscape(optional)*/
+@media(max-width:480px){
+
+}
+
+/*iphone 5 and android potrait*/
+@media(max-width:380px){
+
+}
+
+/*iphone4 potrait(optional)*/
+@media(max-width:320px){
+
+}
+
+/*nexus 7 potrait(optional)*/
+@media (max-width: 603px){
+}
+/*nexus 7 landscape(optional)*/
+@media(min-width:769px) and (max-width:990px){
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+
+
