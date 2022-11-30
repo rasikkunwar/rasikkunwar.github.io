@@ -16,8 +16,9 @@ body {
 
 header {
     background-image: url(../images/movie/bannerbg.png);
+    text-align: center;
+    background-repeat: repeat-x;
 }
-
 h1 {
     text-align: center;
     font-size: 24pt;
@@ -43,8 +44,7 @@ h1 {
     position: relative;
     font-size: 48pt;
     font-weight: bold;
-    left: 60px;
-    bottom: 20px;
+    bottom: 15px;
 }
 
 .reviewcontent {
