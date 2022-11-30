@@ -1,0 +1,40 @@
+body{
+    margin: 1%;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1;
+    background-color: #585647;
+    color: #fff;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.title{
+    color: #A4BFFC;
+}
+.impwords{
+    color:#E7EA7A;
+    font-weight: bold;
+}
+hr{
+    width: 100%;
+}
+
+.imdblink{
+    text-decoration: none;
+    color: #CD5D64;
+}
+.imdblink:hover{
+    text-decoration: underline;
+}
+.outline{
+    text-align: justify;
+}
+p:first-letter{
+    font-size:150%
+}
