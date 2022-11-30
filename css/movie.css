@@ -110,8 +110,8 @@ dl dd {
 }
 #validation{
     position: fixed;
-    right: 20px;
-    bottom: 15px;
+    right: 0;
+    bottom: 0;
     opacity: 0.5;
 }
 ul{
