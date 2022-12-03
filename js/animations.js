@@ -17,7 +17,13 @@
 
 var BLANK = "";
 
-var CUSTOM = "" ;   // you could change the value of this variable in your code
+var CUSTOM = "  o\n" +
+" /#\\\n" +
+" _|_\n" +
+"=====\n" +
+"  o\n" +
+"_/#\\_\n" +
+" _|_\n" ;   // you could change the value of this variable in your code
 
 var EXERCISE = "  o\n" +
     " /#\\\n" +
