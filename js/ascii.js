@@ -49,7 +49,7 @@ window.onload = function () {
         }
     }
 
-    fontSize.onclick = function () {
+    fontSize.onchange = function () {
         textArea.style.fontSize = size[this.value];
     }
 
