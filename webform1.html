@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Validation Using Regex</title>
+    <link href="./css/webform1.css" rel="stylesheet">
+    <script src="./js/webform1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post">
+            <label for="email">Email Address</label>
+            <input type="text" id="email">
+            <span id="comment">We'll never share your email with anyone else.</span>
+            <label for="password">Password</label>
+            <input type="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}$" title="Password field is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter">
+            <div class="input">
+                <input type="checkbox">Check me out
+            </div>
+            <input type="submit" value="Submit" id="submitBtn">
+        </form>
+    </div>
+</body>
+
+</html>

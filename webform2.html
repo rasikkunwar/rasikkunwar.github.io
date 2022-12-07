@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRM System</title>
+    <link href="./css/webform2.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <span>MUM Golden Dome Markek:::SRM System</span>
+        <ul>
+            <li>Products</li>
+            <li>Suppliers</li>
+        </ul>
+        <div class="user-info">
+            <span id="username">Hello!</span>
+            <button>Sign Out</button>
+        </div>
+    </div>
+    <div class="form-body">
+        <p id="form-title">New Product Form</p>
+        <form method="post">
+            <div id="pnum">
+            <label for="prod_number">Product Number</label>
+            <input type="text" id="prod_number" name="prod_number">
+            </div>
+            <div id="qstock">
+            <label for="quantity_stock">Quantity in stock</label>
+            <input type="text" id="quantity_stock" name="quantity">
+            </div>
+            <div id="pname">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            </div>
+            <div id="psupplier">
+            <label for="supplier">Supplier</label>
+            <select id="supplier" name="supplier">
+                <option>ABC</option>
+                <option>DEF</option>
+            </select>
+            </div>
+            <div id="actionbtn">
+                <input type="reset" value="Reset" id="resetBtn">
+                <input type="button" value="Cancel" id="cancelBtn">
+                <input type="submit" value="Add Product" id="submitBtn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

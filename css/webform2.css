@@ -1,0 +1,137 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    background-color: #2AA3E7;
+    padding: 5px;
+    color: white;
+}
+
+.navbar span {
+    padding: 20px;
+    font-size: 14pt;
+    margin-right: 20px;
+}
+
+.navbar li {
+    display: inline;
+    padding: 10px 40px;
+    margin-left: 10px;
+    border-left: 1px solid #ffffff;
+    opacity: 80%;
+}
+
+.user-info {
+    position: absolute;
+    right: 10px;
+    top: 2%;
+
+}
+
+.user-info button {
+    padding: 5pt;
+    border-color: white;
+    border-radius: 5px;
+}
+
+#form-title {
+    font-size: 20pt;
+    margin-left: 5%;
+}
+
+form {
+    display: grid;
+    grid-template-areas: 'pn qs'
+        'pna ps';
+    margin-left: 100px;
+}
+
+form input,
+select {
+    display: block;
+}
+
+#pnum {
+    grid-area: pn;
+    margin-right: 100px;
+}
+
+#qstock {
+    grid-area: qs;
+    margin-right: 100px;
+}
+
+#pname {
+    grid-area: pna;
+    margin-right: 100px;
+    margin-top:20px;
+}
+
+#psupplier {
+    grid-area: ps;
+    margin-right: 100px;
+    margin-top:20px;
+}
+
+
+form input {
+    padding: 10px;
+    width: 100%;
+}
+
+form select {
+    padding: 10px;
+    width: 104%;
+}
+
+#actionbtn {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    margin-top: 30px;
+    margin-right: 65px;
+}
+
+#resetBtn {
+    background: none;
+    margin-right: 10px;
+    color: #194575;
+    border-color: #194575;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancelBtn {
+    background: none;
+    margin-right: 10px;
+    color: #DD5604;
+    border-color: #DD5604;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitBtn {
+    background: none;
+    margin-right: 10px;
+    color: #2EA4E6;
+    border-color: #2EA4E6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input#prod_number{
+    margin-top: 5px;
+}
+input#quantity_stock{
+    margin-top: 5px;
+}
+input#name{
+    margin-top: 5px;
+}
+select#supplier{
+    margin-top: 5px;
+}
