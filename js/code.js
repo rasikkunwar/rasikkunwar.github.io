@@ -7,7 +7,7 @@ function multiply(numArray) {
 }
 
 function reverse(name) {
-    return name.split('').reduce((acc,ch) => ch + acc);
+    return name.split('').reduce((acc, ch) => ch + acc);
 }
 
 function filterLongWords(wordsArray, i) {

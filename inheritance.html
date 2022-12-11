@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup("bdd");
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+    </script>
+    <script src="./js/code_1.js"></script>
+    <script src="./js/test_1.js"></script>
+</head>
+
+<body>
+    <p>Look in the Chrome developer console to see the output. CTRL_SHIFT_J <br />
+    Or on Firefox with CTRL_SHIFT_K
+    </p>
+    <div id="mocha"></div>
+    <div>
+        <h2>
+            <pre>3. Teacher Inheritance</pre>
+        </h2>
+        <p>
+            <code>
+          <pre>
+            function Person() {}
+            Person.prototype.initialize = function (name, age) {
+                this.name = name;
+                this.age = age;
+            };
+            Person.prototype.describe = function () {
+                return this.name + ", " + this.age + " years old.";
+            };
+
+            function Teacher() {}
+            Teacher.prototype = new Person();
+
+            Teacher.prototype.teach = function (subject) {
+                return this.name + " is now teaching " + subject;
+            };
+            let teacher = new Teacher();
+            teacher.initialize("John", 28);
+
+            console.log(teacher.teach("JavaScript"));
+        </pre
+          >
+        </code>
+        </p>
+    </div>
+    <script>
+        mocha.run();
+    </script>
+</body>
+
+</html>
