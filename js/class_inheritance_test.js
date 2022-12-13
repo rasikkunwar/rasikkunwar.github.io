@@ -51,12 +51,12 @@ describe("SavingAccounts", function () {
       let bank = new Bank();
       bank.addAccount(50);
       bank.addCheckingAccount(100, 50);
-      bank.addSavingsAccount(200, 20);
+      bank.addSavingsAccount(200, 15);
       bank.closeAccount(2);
       let actualReport = bank.accountReport();
       let expectedReport =
         "Account 1: balance 50\n" +
-        "SavingsAccount 3: balance 200 interest rate: 20\n";
+        "SavingsAccount 3: balance 200 interest rate: 15\n";
       assert.equal(actualReport, expectedReport);
     });
     it("End of Month", function () {
