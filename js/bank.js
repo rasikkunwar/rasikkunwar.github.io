@@ -25,11 +25,11 @@ class Bank {
         return Bank.nextNumber;
       }
     closeAccount(number) {
-      let indexOfAccount = this.accounts.reduce(
+      let indexOfCloseAccount = this.accounts.reduce(
         (acc, account, index) => (account.getNumber() === number ? index : acc),
         -1
       );
-      this.accounts.splice(indexOfAccount, 1);
+      this.accounts.splice(indexOfCloseAccount, 1);
     }
     accountReport() {
       return this.accounts.reduce(
