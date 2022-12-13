@@ -6,21 +6,21 @@ class Bank {
     getAccount(number) {
       return this.accounts.filter((acc) => acc.getNumber() === number)[0];
     }
-    addAccount(amount) {
+    addAccount() {
         let account = new Account(++Bank.nextNumber);
-        account.deposit(amount);
+        account.deposit(50);
         this.accounts.push(account);
         return Bank.nextNumber;
       }
-      addSavingsAccount(amount, intrest) {
+      addSavingsAccount(intrest) {
         let account = new SavingsAccount(++Bank.nextNumber, intrest);
-        account.deposit(amount);
+        account.deposit(200);
         this.accounts.push(account);
         return Bank.nextNumber;
       }
-      addCheckingAccount(amount, overdraft) {
+      addCheckingAccount(overdraft) {
         let account = new CheckingAccount(++Bank.nextNumber, overdraft);
-        account.deposit(amount);
+        account.deposit(100);
         this.accounts.push(account);
         return Bank.nextNumber;
       }
