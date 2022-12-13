@@ -15,7 +15,7 @@ describe("Account", function () {
     });
   });
 
-  describe("check the account info after deposit 500000", function () {
+  describe("check the account info after depositing 500000", function () {
     const account = new Account(67890);
     account.deposit(45000);
 
@@ -28,7 +28,7 @@ describe("Account", function () {
   });
 
 
-  describe("check the account info after withdraw 25000", function () {
+  describe("check the account info after withdrawing 25000", function () {
     const account = new Account(67890);
     account.deposit(45000);
     account.withdraw(25000);
