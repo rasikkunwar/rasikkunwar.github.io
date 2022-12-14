@@ -29,7 +29,7 @@ $(function () {
                 'width': circleSize + "px",
                 'height': circleSize + "px",
                 'top': "50%",
-                'left': index === 0 ? "50%" :getCircleRandomPosition(window.innerWidth) + "px"
+                'left': index === 0 ? "50%" : getCircleRandomPosition(window.innerWidth) + "px"
             }
         })
             .on("click", clickHandler)

@@ -18,7 +18,7 @@ $(function () {
         if (gameStarted) {
             gameFinished = true;
             gameStarted = false;
-            $('#status').text("You win :). Click 'S' to reset");
+            $('#status').html("You win &#x1F602; . Click 'S' to reset");
         }
     })
     $("#maze").children(".boundary").mouseover(function () {
@@ -34,7 +34,7 @@ $(function () {
             gameLoosed = true;
             gameStarted = false;
             $(".boundary").addClass("youlose");
-            $('#status').text("Sorry, you lost :(. Click 'S' to reset");
+            $('#status').html("Sorry, you lost &#x1F622; . Click 'S' to reset");
         }
     }
 })
