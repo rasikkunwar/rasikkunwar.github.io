@@ -1,0 +1,23 @@
+#container{
+   width: 100%;
+   margin: auto;
+}
+.circle{
+    position: fixed;
+    border-radius: 50%;
+}
+#controls{
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    position: absolute;
+    bottom: 20%;
+    left: 2%;
+}
+#startBtn{
+    width: 40%;
+    background-color: #008080;
+    margin-top: 3%;
+    color: white;
+    padding: 2%;
+}
