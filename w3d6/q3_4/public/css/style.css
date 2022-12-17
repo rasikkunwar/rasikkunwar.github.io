@@ -1,0 +1,35 @@
+body{
+    color: white;
+}
+header{
+    background: #0077b6;    
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#cartBtn{
+    background: #48cae4;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+footer{
+    background: #0096c7;    
+    padding: 1px;
+    text-align: center;
+}
+
+#product, #shopping_cart{
+    background: #00b4d8;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+table{
+    width: 100%;
+    padding: 20px;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }

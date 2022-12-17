@@ -1,0 +1,19 @@
+<%- include('header.ejs')%>
+<div id="shopping_cart">
+    <table>
+        <caption>Shopping Cart Lists</caption>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+        <% cartLists.forEach(item => { %>
+        <tr>
+          <td><%= item.name%></td>
+          <td><%= item.price%></td>
+          <td><%= item.quantity%></td>
+        </tr>
+        <% }) %>
+      </table>
+</div>
+<%- include('footer.ejs')%>
