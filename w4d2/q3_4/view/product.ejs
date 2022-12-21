@@ -1,0 +1,29 @@
+<%- include('header.ejs')%>
+<div id="product">
+    <table>
+      <caption>Product Lists</caption>
+      <div id="msg"></div>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th></th>
+        </tr>
+        <% productLists.forEach(item => { %>
+        <tr>
+          <td><%= item.id%></td>
+          <td><%= item.name%></td>
+          <td><%= item.price%></td>
+          <td><%= item.description%></td>
+          <td>
+            <form class="addToCart">
+                <input type="hidden" name="id" value="<%=item.id %>" id="cartId">
+                <input type="submit" value="Add to cart">
+            </form>
+          </td>
+        </tr>
+        <% }) %>
+      </table>
+</div>
+<%- include('footer.ejs')%>
