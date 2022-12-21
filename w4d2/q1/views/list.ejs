@@ -14,7 +14,7 @@
     <ul>
         <% for (key in list) { %>
             <% let person = list[key]; %>
-            <li><%= person.fname + " " + person.lname + ", " + person.food %></li>
+            <li><%= person.fname + " " + person.lname + ", " + person.food + ", " + person.arrival_time %></li>
         <% } // end for loop %>
     </ul>
     <% }  // end else %>
